@@ -81,7 +81,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
-    
+
     animation: moveInRight 1s ease-out;
 }
 
@@ -150,7 +150,7 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
