@@ -13,13 +13,17 @@ Dark green: #28b485
     box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    /*font-size: 16px;*/
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .header {
@@ -38,12 +42,12 @@ body {
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3,5rem;
 }
 
 .text-box {
@@ -58,7 +62,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .heading-primary-main {
@@ -170,5 +174,6 @@ body {
 }
 
 .btn-animated {
-    animation: moveInBottom .5s ease-out;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
