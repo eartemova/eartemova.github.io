@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+*.json
+*.scss
+*.scss
+Natours/sass/main.scss
+Natours/sass/main.scss
