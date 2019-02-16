@@ -1,0 +1,7 @@
+.header-4 {
+  color:$color-primary;  
+}
+
+.header-5 {
+  color:red;  
+}
