@@ -35,13 +35,18 @@ a {
 .about {
   text-align: left; }
   .about .about__list {
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
   .about .about__item {
-    width: 250px;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
     padding-top: 85px; }
+
+@media (min-width: 768px) {
+  .about__list {
+    -webkit-column-count: 2;
+            column-count: 2; } }
 
 .btn {
   display: inline-block;
@@ -81,7 +86,14 @@ a {
     .container {
       width: 768px;
       padding-left: 50px;
-      padding-right: 50px; } }
+      padding-right: 50px;
+      margin-top: -33px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: -33px; } }
 
 .copyright {
   display: -webkit-box;
@@ -108,7 +120,6 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 320px;
   margin: auto;
   text-align: left; }
 
@@ -140,6 +151,11 @@ a {
   font-weight: 700;
   line-height: 1.41;
   text-align: center; }
+
+@media (min-width: 768px) {
+  .favorites__moto {
+    width: 76px;
+    padding-left: 300px; } }
 
 @font-face {
   font-family: "Open Sans";
@@ -285,7 +301,8 @@ a {
 
 @media (min-width: 768px) {
   .page-top {
-    width: 768px; }
+    width: 768px;
+    min-height: 700px; }
     .page-top--index {
       background-image: url("../../img/hero-tablet@1x.jpg"); } }
 
@@ -310,7 +327,7 @@ a {
   .proposals .proposals__list {
     list-style: none;
     width: 100%;
-    margin: 0;
+    margin-top: 0;
     padding: 0; }
   .proposals .proposals__item {
     padding-top: 30px;
@@ -337,6 +354,26 @@ a {
     .proposals .proposals__link--toys {
       background-color: #46c1ae;
       margin-bottom: 34px; }
+
+@media (min-width: 768px) {
+  .proposals {
+    width: 768px;
+    margin-top: -119px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .proposals__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .proposals__item {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (min-width: 1200px) {
+  .proposals {
+    width: 1200px; } }
 
 .product-card {
   text-align: left;
@@ -419,6 +456,29 @@ a {
     display: -ms-flexbox;
     display: flex; }
 
+.page-footer__logo {
+  display: none; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .page-footer__logo {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 1200px; } }
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,8 +487,16 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
+/*
+
+@media (min-width: $tablet-width) {
+  .social-list {
+  }
+} */
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
